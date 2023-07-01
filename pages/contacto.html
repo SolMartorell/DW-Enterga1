@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somos Borja</title>
+    <link rel="shortcut icon" href="../multimedia/img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navegador">
+            <ul id="arriba">
+                <li><a href="../index.html">Inicio</a></li>                     
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./carta.html">Carta</a></li>
+                <li><a href="./fotos.html">Fotos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="#donde-estamos">Donde estamos</a></li>
+                <li><a href="https://www.instagram.com/borjalaplata/" target="_blank"><img class="logo-ig" src="../multimedia/img/instagram.jpg" alt="logo instagram"></a></li>
+                <li><a href="https://wa.me/5492216054093" target="_blank"><img class="logo-whatsapp" src="../multimedia/img/whatsapp.jpg" alt="logo Whatsapp"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contacto">
+            <p class="texto-contacto">Contactanos</p>
+            <form class="form">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+                <br>
+                <br>
+                <label for="apellido">Apellido: </label>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" required>
+                <br>
+                <br>
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="email" placeholder="Ingrese su Email" required>
+                <br>
+                <br>
+                <label for="mensaje">Mensaje: </label>
+                <textarea name="mensaje" id="mensaje" cols="40" rows="10" placeholder="Ingrese un mensaje" required></textarea>
+                <br>
+                <br>
+                <fieldset>
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" name="sexo" id="mujer" value="mujer" checked>
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="sexo" id="hombre" value="hombre">
+                    <label for="noespecifica">No especifica</label>
+                    <input type="radio" name="sexo" id="noespecifica" value="noespecifica">
+                </fieldset>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="donde-estamos">
+            <img class="logo" src="../multimedia/img/logo.jpg" alt="logo">
+            <p>Estamos en 12 esquina 41 - La Plata</p>
+            <p>Abrimos el salón todos los días a partir de las 18 hs.</p>
+            <p>Tomamos pedidos y reservas a partir de las 19 hs.</p>
+            <p>Carta y Whatsapp: <a href="https://linktr.ee/borjalaplata" target="_blank">linktree</a></p>        
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.7385926257407!2d-57.966320124533944!3d-34.91300907284495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7e8637e2a55%3A0x7d86fe92f4f7d37d!2sBORJA!5e0!3m2!1ses-419!2sar!4v1687532014982!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <a href="#arriba"><span class="arriba"><i class="fa-solid fa-arrow-up"></i> Ir arriba</span></a> 
+        </div>
+    </footer>
+</body>
+</html>

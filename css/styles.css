@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------NAV--------------*/
+
+.navegador{
+    background-image: url(../multimedia/img/logo.jpg);
+    background-size: auto;
+    background-position: 40%;
+    padding: 10px;
+}
+
+.navegador ul{
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.navegador ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+
+}
+
+.logo-ig{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.logo-whatsapp{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* ------------FOOTER--------------*/
+
+footer{
+    background-color: rgb(26, 22, 22);
+    color: white;
+    font-size: smaller;
+    padding: 10px;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    padding-bottom: 25px;
+    object-fit: cover;
+}
+
+.mapa{
+    width: 350px;
+    height: 350px;
+    padding-top: 25px;
+    object-fit: cover;
+}
+
+.arriba{
+    color: black;
+    font-size: large;
+    background-color: white;
+}
+
+/* ------------INDEX--------------*/
+
+.video-inicio{
+    display: block;
+    width: 40%;
+    margin: auto;
+    padding-bottom: 30px;
+    object-fit: cover;
+}
+
+main{
+    background-color:rgb(26, 22, 22);
+}
+
+.bienvenidos{
+    padding: 25px;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    background-color: rgb(26, 22, 22);
+}
+
+/* ------------NOSOTROS--------------*/
+
+.texto-nosotros{
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    padding: 40px;
+    background-color: rgb(26, 22, 22);
+}
+
+.esquina{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    object-fit: cover;
+    width: 50%;
+}
+
+.cervezas{
+    text-align: center;
+    font-size: large;
+    color: white;
+    padding: 20px;
+    background-color: rgb(26, 22, 22);
+}
+
+/* ------------CARTA--------------*/
+
+.carta{
+    padding: 30px;
+}
+
+.carta-qr{
+    display: block;
+    margin: auto;
+    padding: 30px;
+    object-fit: cover;
+    width: 50%;
+    border: double 10px white;
+    background-color: rgb(26, 22, 22);
+}
+
+/* ------------FOTOS--------------*/
+
+.fotos{
+    text-align: center;
+    padding: 25px;
+}
+
+.borja1{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.birra{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.burger{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.papas{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.pizza{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.pedidos{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* ------------CONTACTO--------------*/
+
+.form{
+    color:white;
+}
+
+.contacto{
+    border-bottom: solid 5px white;
+    border-top: solid 5px white;
+    padding: 15px;
+}
+
+.texto-contacto{
+    font-size:xx-large;
+    color: white;
+    background-color: rgb(26, 22, 22);
+}
+.form fieldset{
+    width: 320px;
+    text-align: center;
+}
