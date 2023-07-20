@@ -10,87 +10,139 @@
 /* ------------NAV--------------*/
 
 .navegador{
-    background-image: url(../multimedia/img/logo.jpg);
-    background-size: auto;
-    background-position: 40%;
-    padding: 10px;
-}
+    background-color:rgb(26, 22, 22);
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: baseline; 
 
+}
 .navegador ul{
     list-style-type: none;
     font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
 }
-
 .navegador ul li a{
     text-decoration: none;
     color: white;
-    display: block;
-
 }
-
+.navegador ul li a:hover{
+    color: rgba(90, 88, 88, 0.459);
+}
+.iconos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: end;
+    list-style-type: none;
+    align-items: center; 
+}
 .logo-ig{
     width: 20px;
     height: 20px;
     object-fit: cover;
     border-radius: 5px;
 }
-
 .logo-whatsapp{
     width: 20px;
     height: 20px;
     object-fit: cover;
     border-radius: 5px;
 }
+.navegador .fa-bars{
+    display: none;
+}
+
+@media(max-width:768px){
+    .navegador{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        align-items: center; 
+    }
+    .navegador .fa-bars{
+        display: block;
+        margin: 10px;
+        font-size: 30px;
+        color: white;
+        order: -1;
+    }
+    .navegador .fa-bars:hover + ul {
+        left: 0;
+    }
+    .navegador ul {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -500px;
+        width: 150px;
+        height: 100vh;
+        background-color:rgb(26, 22, 22);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+        padding-top: 50px;
+        transition: 0.20s;
+    }
+    .navegador ul:hover{
+        left: 0;
+    }
+    .navegador ul li a{
+        color: white
+    }
+    .navegador ul li a:hover{
+        color:  rgba(90, 88, 88, 0.459);
+    }
+
+}
 
 /* ------------FOOTER--------------*/
 
 footer{
     background-color: rgb(26, 22, 22);
-    color: white;
-    font-size: smaller;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding-top: 10px;
 }
-
 .logo{
-    width: 150px;
-    height: 150px;
-    padding-bottom: 25px;
-    object-fit: cover;
+    width: 250px;
+    text-align: center;
 }
-
+.logo img{
+    object-fit: cover;
+    width: 70%;
+}
+.texto-footer{
+    color: white;
+    font-size: 12px; 
+    text-align: center;
+}
 .mapa{
-    width: 350px;
-    height: 350px;
-    padding-top: 25px;
-    object-fit: cover;
-}
-
-.arriba{
-    color: black;
-    font-size: large;
-    background-color: white;
+    text-align: center;
 }
 
 /* ------------INDEX--------------*/
 
-.video-inicio{
-    display: block;
-    width: 40%;
-    margin: auto;
-    padding-bottom: 30px;
-    object-fit: cover;
-}
-
 main{
     background-color:rgb(26, 22, 22);
 }
-
 .bienvenidos{
     padding: 25px;
     text-align: center;
     font-size: xx-large;
     color: white;
     background-color: rgb(26, 22, 22);
+}
+.carousel-item img{
+    object-fit: cover;
+    
 }
 
 /* ------------NOSOTROS--------------*/
@@ -102,7 +154,6 @@ main{
     padding: 40px;
     background-color: rgb(26, 22, 22);
 }
-
 .esquina{
     display: block;
     margin: auto;
@@ -110,7 +161,6 @@ main{
     object-fit: cover;
     width: 50%;
 }
-
 .cervezas{
     text-align: center;
     font-size: large;
@@ -124,7 +174,6 @@ main{
 .carta{
     padding: 30px;
 }
-
 .carta-qr{
     display: block;
     margin: auto;
@@ -141,37 +190,31 @@ main{
     text-align: center;
     padding: 25px;
 }
-
 .borja1{
     width: 400px;
     height: 400px;
     object-fit: cover;
 }
-
 .birra{
     width: 400px;
     height: 400px;
     object-fit: cover;
 }
-
 .burger{
     width: 400px;
     height: 400px;
     object-fit: cover;
 }
-
 .papas{
     width: 400px;
     height: 400px;
     object-fit: cover;
 }
-
 .pizza{
     width: 400px;
     height: 400px;
     object-fit: cover;
 }
-
 .pedidos{
     width: 400px;
     height: 400px;
@@ -183,13 +226,11 @@ main{
 .form{
     color:white;
 }
-
 .contacto{
     border-bottom: solid 5px white;
     border-top: solid 5px white;
     padding: 15px;
 }
-
 .texto-contacto{
     font-size:xx-large;
     color: white;
