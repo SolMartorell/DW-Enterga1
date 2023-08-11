@@ -1,0 +1,123 @@
+.texto-nosotros {
+    @include flex-column-basic;
+    color: #d9d9d9;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    background-color: $bgcolor;
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+    }
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+    }
+  }
+.texto-nosotros2 {
+  @include flex-column-basic;
+  font-size: x-large;
+  color: $fontcolor;
+  background-color: $bgcolor;
+  padding: 20px;
+  @media (max-width: 768px) {
+    font-size: large;
+  }
+  @media (max-width: 576px) {
+  font-size: medium;
+  }
+  .esquina {
+    margin: auto;
+    object-fit: cover;
+    width: 50%;
+    height: auto;
+    padding-bottom: 40px;
+  }
+}
+.cervezas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat (2, 1fr);
+  justify-items: center;
+  row-gap: 25px;
+  @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat (3, 1fr);
+  }
+  @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+  }
+  .cerveza {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    padding: 0;
+    &::before {
+      content: "";
+      width: inherit;
+      height: inherit;
+      background-color: black;
+      position: absolute;
+      transform: scaleZ(0);
+    }
+    &:hover::before {
+      transform: scaleZ(1);
+    }
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+    .info_cerveza {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        color: $fontcolor;
+        font-size: 16px;
+        @include flex-column-basic;
+        padding: 10px;
+        gap: 5px;
+        width: inherit;
+        height: inherit;
+        top: -20px;
+        left: 0;
+        opacity: 0;
+        &:hover {
+          top: 0;
+          opacity: 1;  
+        }
+        h3 {
+          font-size: 20px;
+          margin: 0;
+        }
+        h4 {
+          font-size: 18px;
+          margin: 0;
+        }
+    }
+  }
+}
+.hh {
+  padding: 40px;
+  text-align: center;
+  color: $fontcolor;
+  p {
+    margin: 0;
+  }
+}

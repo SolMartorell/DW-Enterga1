@@ -1,0 +1,50 @@
+.contacto {
+  .texto-contacto {
+    font-size: xx-large;
+    color: $fontcolor;
+    background-color: $bgcolor;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .form {
+    color: $fontcolor;
+    width: 360px;
+    margin: 15px auto;
+    margin-bottom: 0%;
+    padding-bottom: 20px;
+    @include flex-column-basic;
+    gap: 10px;
+    label {
+      text-align: start;
+    }
+    textarea {
+      border-radius: 5px;
+      padding-left: 5px;
+    }
+    #nombre {
+      @extend %form;
+    }
+    #apellido {
+      @extend %form;
+    }
+    #email {
+      @extend %form;
+    }
+    fieldset {
+      font-size: 16px;
+      @include flex-row-basic;
+      gap: 10px;
+      padding: 20px;
+    }
+    .botones {
+      @include flex-row-basic;
+      gap: 10px;
+    }
+  }
+}
+
+
+
+
+  

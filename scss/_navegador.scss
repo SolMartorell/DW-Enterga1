@@ -1,0 +1,79 @@
+.navegador {
+    background-color: $bgcolor;
+    padding: 15px 20px;
+    height: 100px;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: baseline;
+    @media (max-width: 768px) {
+      display: grid;
+      grid-template-columns: 3fr 3fr;
+      align-items: center;
+    }
+    .fa-bars {
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+            margin: 10px;
+            font-size: 30px;
+            color: white;
+            order: -1;
+        }
+    }
+    ul {
+        list-style-type: none;
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px;
+        margin: 0;
+        @media (max-width: 768px) {
+            position: fixed;
+            z-index: 3;
+            top: 0;
+            left: -500px;
+            width: 50%;
+            height: 100vh;
+            background-color: rgba(26, 22, 22, 0.8);
+            @include flex-column-basic;
+            padding: 0px 0px;
+            padding-top: 50px;
+            transition: 0.2s ease;
+        }
+        li a {
+            text-decoration: none;
+            color: $fontcolor;
+            &:hover {
+                color: $hovercolor;
+                @media (max-width: 768px) {
+                    left: 0;
+                }
+            }
+        }
+    }
+    .iconos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: end;
+        list-style-type: none;
+        align-items: center;
+        padding-right: 20px;
+        .logo-ig {
+            @extend %redes;
+        }
+        .logo-whatsapp {
+            @extend %redes;
+        }
+    }
+}
+@media (max-width: 768px) {
+  .navegador .fa-bars:hover + ul {
+    left: 0;
+  }
+}

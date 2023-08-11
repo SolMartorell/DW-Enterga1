@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somos Borja</title>
+    <meta name="description" content="Somos Borja, vení a conocernos! En la esquina más linda de La Plata">
+    <title>Somos Borja | Nosotros </title>
     <link rel="shortcut icon" href="../multimedia/img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -29,38 +31,79 @@
     </header>
     <main>
         <div class="texto-nosotros">
-            <p>Desde 2019, Borja supo aprovechar cada año de experiencia para hoy brindarte la mejor calidad en atención y gastronomía.</p>
-            <p>Con tradiciones que la hacen única… en la esquina más linda de la ciudad de La Plata.</p>
+            <h1>Buena comida, cerveza y amigxs!</h1>
+            <h2>Tenes planes para hoy?</h2>
+            <h2>Venite a Borja!</h2>
+            <h2>Desde 2019, en la esquina más linda de la ciudad de La Plata!</h2>
         </div>
         <div class="texto-nosotros2">
-            <img class="esquina" src="../multimedia/img/fachada.jpg" alt="esquina">
+            <img class="esquina img-fluid" src="../multimedia/img/fachada.jpg" alt="esquina">
             <p>NOS ACOMPAÑAN🍺</p>
         </div>       
-            <div class="row cervezas">
-                <div class="col-12 col-md-4">
-                    <p>👉 KIM</p>
-                    <p><a href="https://www.instagram.com/kimcerveza/" target="_blank">@kimcerveza</a></p>
-                    <p>SESSION IPA</p>
-                    <p>Es una cerveza ligera, con aroma frutal y cítrico, con un amargor más pronunciado. IBU 40. Graduación 4.5%</p>
+            <div class="cervezas">
+                <div class="cerveza">
+                    <img src="../multimedia/img/barfuss.png" alt="barfuss">
+                    <div class="info_cerveza">
+                        <h3>BARFUSS</h3>
+                        <h4>IPA TEXAS</h4>
+                        <p>Las notas tropicales en el sabor y aroma son características en esta cerveza; presenta cuerpo medio y final amargo equilibrado por un suave y rico sabor maltoso. IBU 60. Graduación 6%</p>
+                        <a href="https://www.instagram.com/cervezabarfuss/"target="_blank">@cervezabarfuss</a>
+                    </div>
                 </div>
-                <div class="col-12 col-md-4">
-                    <p>👉 AMADEUS</p>
-                    <p><a href="https://www.instagram.com/amadeus_cerveza/" target="_blank">@amadeus_cerveza</a></p>
-                    <p>AMERICAN IPA</p>
-                    <p>Rubia. Una american ipa sin filtrar, de amargor balanceado, con mayor carácter lupulado. Intenso aroma cítrico y tropical. Graduación 7%</p>
+                <div class="cerveza">
+                    <img class="amadeus" src="../multimedia/img/amadeus.png" alt="amadeus">
+                    <div class="info_cerveza">
+                        <h3>AMADEUS</h3>
+                        <h4>AMERICAN IPA</h4>
+                        <p>Rubia. Una american ipa sin filtrar, de amargor balanceado, con mayor carácter lupulado. Intenso aroma cítrico y tropical. Graduación 7%</p>
+                        <a href="https://www.instagram.com/amadeus_cerveza/" target="_blank">@amadeus_cerveza</a>
+                    </div>
                 </div>
-                <div class="col-12 col-md-4">
-                    <p>👉 BARFUSS</p>
-                    <p><a href="https://www.instagram.com/cervezabarfuss/" target="_blank">@cervezabarfuss</a></p>
-                    <p>IPA TEXAS</p>
-                    <p>Las notas tropicales en el sabor y aroma son características en esta cerveza; presenta cuerpo medio y final amargo equilibrado por un suave y rico sabor maltoso. IBU 60. Graduación 6%</p>
+                <div class="cerveza">
+                    <img class="kim" src="../multimedia/img/kim.jpeg" alt="kim">
+                    <div class="info_cerveza">
+                        <h3>KIM</h3>
+                        <h4>SESSION IPA</h4>
+                        <p>Es una cerveza ligera, con aroma frutal y cítrico, con un amargor más pronunciado. IBU 40. Graduación 4.5%</p>
+                        <a href="https://www.instagram.com/kimcerveza/" target="_blank">@kimcerveza</a>
+                    </div>
                 </div>
+                <div class="cerveza">
+                    <img class="laurus" src="../multimedia/img/laurus.png" alt="laurus">
+                    <div class="info_cerveza">
+                        <h3>LAURUS</h3>
+                        <h4>STOUT IMPERIO RUSO</h4>
+                        <p>Tiene alto contenido de lúpulo, dándole gran amargor, sobresalen los sabores a cacao y café. IBU 45. Graduación %</p>
+                        <a href="https://www.instagram.com/cervezalaurus/" target="_blank">@cervezalaurus</a>
+                    </div>
+                </div>
+                <div class="cerveza">
+                    <img class="baum" src="../multimedia/img/baum.jpeg" alt="baum">
+                    <div class="info_cerveza">
+                        <h3>BAUM</h3>
+                        <h4>KOLSH</h4>
+                        <p>Limpia, de cuerpo medio. Con carácter muy sutil a fruta. Maltosidad suave. IBU 15. Graduación 5%</p>
+                        <a href="https://www.instagram.com/cervezabaum/" target="_blank">@cervezabaum</a>
+                    </div>
+                </div>
+                <div class="cerveza">
+                    <img class="astor" src="../multimedia/img/astor.jpg" alt="astor">
+                    <div class="info_cerveza">
+                        <h3>ASTOR</h3>
+                        <h4>AMERICAN AMBER ALE</h4>
+                        <p>Elixir ámbar oscuro, con maltas caramelo y un toque cítrico de los lúpulos americanos. IBU 20. Graduación 5.5%</p>
+                        <a href="https://www.instagram.com/astorbirra/" target="_blank">@astorbirra</a>
+                    </div>
+                </div>
+            </div> 
+        <div class="hh">
             <p>- Happy Hour todos los días de 18 a 21 hs. -</p> 
         </div>
     </main>
     <footer>
         <div class="logo">
             <img src="../multimedia/img/logo.jpg" alt="logo">
+            <p>© 2023 Borja. Todos los derechos reservados.</p>
         </div>
         <div class="texto-footer">
             <p>Estamos en 12 esquina 41 - La Plata</p>
@@ -73,5 +116,9 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

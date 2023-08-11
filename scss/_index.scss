@@ -1,0 +1,13 @@
+main {
+    background-color: $bgcolor;
+    padding-bottom: 40px;
+  .carousel-caption {
+    color: $fontcolor;
+    text-shadow: 0 0 10px rgba(255,255,255,.5), 0 0 5px rgba(255,255,255,.5);
+  }
+  .carousel-item img {
+    object-fit: cover;
+    height: 500px;
+    opacity: 0.5;
+  }    
+}

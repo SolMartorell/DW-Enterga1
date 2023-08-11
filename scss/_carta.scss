@@ -1,0 +1,12 @@
+.carta {
+    padding: 30px;
+    .carta-qr {
+        display: block;
+        margin: auto;
+        padding: 30px;
+        object-fit: cover;
+        width: 600px;
+        border: double 10px white;
+        background-color: $bgcolor;
+    }
+}
