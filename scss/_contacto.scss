@@ -1,50 +1,87 @@
-.contacto {
-  .texto-contacto {
-    font-size: xx-large;
-    color: $fontcolor;
-    background-color: $bgcolor;
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
+.box_contacto {
+  padding: 40px;
+  background-color: $hovercolor;
+  box-shadow: 0 0 20px 0 rgba($color: #fcfbfbaf, $alpha: 0.3);
+  width: 600px;
+  border-radius: 5px;
+  margin: auto;
+  @media (max-width: 576px) {
+    width: 400px;
   }
-  .form {
+  .contactanos {
+    h1 {
+    font-size: 32px;
     color: $fontcolor;
-    width: 360px;
-    margin: 15px auto;
-    margin-bottom: 0%;
-    padding-bottom: 20px;
-    @include flex-column-basic;
+    text-align: center;
+    margin: 0;
+    }
+  }
+  .contacto {
+    @include flex-row-basic;
     gap: 10px;
-    label {
-      text-align: start;
+    .texto-contacto {
+      font-size: 14px;
+      color: $fontcolor;
+      padding: 10px;
+      @include flex-column-basic;
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin: 40px auto;
+      }
+      p {
+        gap: 20px;
+      }
+      @media (max-width: 576px) {
+        width: 150px;
+        font-size: 12px;
+      }
     }
-    textarea {
-      border-radius: 5px;
-      padding-left: 5px;
-    }
-    #nombre {
-      @extend %form;
-    }
-    #apellido {
-      @extend %form;
-    }
-    #email {
-      @extend %form;
-    }
-    fieldset {
-      font-size: 16px;
-      @include flex-row-basic;
-      gap: 10px;
-      padding: 20px;
-    }
-    .botones {
-      @include flex-row-basic;
-      gap: 10px;
+    .form_contacto {
+      padding: 10px;
+      @media (max-width: 576px) {
+        width: 250px;
+        font-size: 14px;
+      }
+      .form {
+        color: $fontcolor;
+        margin: 15px auto;
+        margin-bottom: 0%;
+        padding-bottom: 10px;
+        @include flex-column-basic;
+        gap: 10px;
+        label {
+          text-align: start;
+        }
+        textarea {
+          border-radius: 5px;
+          padding-left: 5px;
+        }
+        #nombre {
+          @extend %form;
+        }
+        #apellido {
+          @extend %form;
+        }
+        #email {
+          @extend %form;
+        }
+        fieldset {
+          font-size: 14px;
+          @include flex-row-basic;
+          gap: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          @media (max-width: 576px) {
+            font-size: 10px;
+          }
+        }
+        .botones {
+          @include flex-row-basic;
+          gap: 10px;
+        }
+      }
     }
   }
-}
-
-
-
-
-  
+}  

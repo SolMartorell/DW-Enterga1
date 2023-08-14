@@ -8,5 +8,8 @@
         width: 600px;
         border: double 10px white;
         background-color: $bgcolor;
+    @media (max-width: 768px) {
+        width: 80%;
+    }
     }
 }

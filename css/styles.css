@@ -13,10 +13,11 @@
   border-radius: 10px;
 }
 .navegador .iconos .logo-whatsapp:hover, .navegador .iconos .logo-ig:hover {
-  box-shadow: 8px 8px 15px 5px rgba(255, 255, 255, 0.6274509804);
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 
-.contacto .form #email, .contacto .form #apellido, .contacto .form #nombre {
+.box_contacto .contacto .form_contacto .form #email, .box_contacto .contacto .form_contacto .form #apellido, .box_contacto .contacto .form_contacto .form #nombre {
   border-radius: 5px;
   padding-left: 5px;
   height: 40px;
@@ -155,6 +156,7 @@ footer .logo img {
 footer .texto-footer {
   color: white;
   font-size: 16px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,6 +169,10 @@ footer .texto-footer p {
 footer .mapa {
   text-align: center;
   padding-left: 5px;
+}
+footer .mapa iframe {
+  width: 90%;
+  height: 100%;
 }
 @media (max-width: 992px) {
   footer .mapa {
@@ -190,6 +196,7 @@ main {
 }
 main .carousel-caption {
   color: white;
+  font-size: 16px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.5);
 }
 main .carousel-item img {
@@ -203,13 +210,14 @@ main .carousel-item img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  gap: 20px;
 }
 @media (max-width: 992px) {
   .fotos {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 590px) {
   .fotos {
     grid-template-columns: 1fr;
   }
@@ -219,51 +227,107 @@ main .carousel-item img {
   height: 250px;
   object-fit: cover;
   margin: 15px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .fotos img:hover {
-  transform: scale(1.05);
+  transform: scale(1.25);
   border: solid 5px white;
   border-radius: 10px;
 }
 
-.contacto .texto-contacto {
-  font-size: xx-large;
-  color: white;
-  background-color: rgb(26, 22, 22);
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
+.box_contacto {
+  padding: 40px;
+  background-color: rgba(90, 88, 88, 0.459);
+  box-shadow: 0 0 20px 0 rgba(252, 251, 251, 0.3);
+  width: 600px;
+  border-radius: 5px;
+  margin: auto;
 }
-.contacto .form {
+@media (max-width: 576px) {
+  .box_contacto {
+    width: 400px;
+  }
+}
+.box_contacto .contactanos h1 {
+  font-size: 32px;
   color: white;
-  width: 360px;
+  text-align: center;
+  margin: 0;
+}
+.box_contacto .contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.box_contacto .contacto .texto-contacto {
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.box_contacto .contacto .texto-contacto img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 40px auto;
+}
+.box_contacto .contacto .texto-contacto p {
+  gap: 20px;
+}
+@media (max-width: 576px) {
+  .box_contacto .contacto .texto-contacto {
+    width: 150px;
+    font-size: 12px;
+  }
+}
+.box_contacto .contacto .form_contacto {
+  padding: 10px;
+}
+@media (max-width: 576px) {
+  .box_contacto .contacto .form_contacto {
+    width: 250px;
+    font-size: 14px;
+  }
+}
+.box_contacto .contacto .form_contacto .form {
+  color: white;
   margin: 15px auto;
   margin-bottom: 0%;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   gap: 10px;
 }
-.contacto .form label {
+.box_contacto .contacto .form_contacto .form label {
   text-align: start;
 }
-.contacto .form textarea {
+.box_contacto .contacto .form_contacto .form textarea {
   border-radius: 5px;
   padding-left: 5px;
 }
-.contacto .form fieldset {
-  font-size: 16px;
+.box_contacto .contacto .form_contacto .form fieldset {
+  font-size: 14px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
   gap: 10px;
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.contacto .form .botones {
+@media (max-width: 576px) {
+  .box_contacto .contacto .form_contacto .form fieldset {
+    font-size: 10px;
+  }
+}
+.box_contacto .contacto .form_contacto .form .botones {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -283,18 +347,20 @@ main .carousel-item img {
   border: double 10px white;
   background-color: rgb(26, 22, 22);
 }
+@media (max-width: 768px) {
+  .carta .carta-qr {
+    width: 80%;
+  }
+}
 
 .texto-nosotros {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: #d9d9d9;
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 40px;
+  color: white;
   background-color: rgb(26, 22, 22);
+  padding: 30px;
 }
 .texto-nosotros h1 {
   font-size: 32px;
@@ -302,11 +368,18 @@ main .carousel-item img {
 .texto-nosotros h2 {
   font-size: 28px;
 }
+.texto-nosotros p {
+  font-size: 28px;
+  padding-top: 20px;
+}
 @media (max-width: 768px) {
   .texto-nosotros h1 {
     font-size: 28px;
   }
   .texto-nosotros h2 {
+    font-size: 24px;
+  }
+  .texto-nosotros p {
     font-size: 24px;
   }
 }
@@ -317,34 +390,9 @@ main .carousel-item img {
   .texto-nosotros h2 {
     font-size: 22px;
   }
-}
-
-.texto-nosotros2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-size: x-large;
-  color: white;
-  background-color: rgb(26, 22, 22);
-  padding: 20px;
-}
-@media (max-width: 768px) {
-  .texto-nosotros2 {
-    font-size: large;
+  .texto-nosotros p {
+    font-size: 22px;
   }
-}
-@media (max-width: 576px) {
-  .texto-nosotros2 {
-    font-size: medium;
-  }
-}
-.texto-nosotros2 .esquina {
-  margin: auto;
-  object-fit: cover;
-  width: 50%;
-  height: auto;
-  padding-bottom: 40px;
 }
 
 .cervezas {
@@ -420,6 +468,7 @@ main .carousel-item img {
 }
 
 .hh {
+  font-size: 18px;
   padding: 40px;
   text-align: center;
   color: white;

@@ -28,32 +28,45 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="contacto">
-            <h1 class="texto-contacto">Contactanos</h1>
-            <form class="form">
-                <label for="nombre">Nombre: </label>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
-                <label for="apellido">Apellido: </label>
-                <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
-                <label for="email">Email: </label>
-                <input type="text" name="email" id="email" placeholder="Ingrese su email" required>
-                <label for="mensaje">Mensaje: </label>
-                <textarea name="mensaje" id="mensaje" cols="40" rows="10" placeholder="Ingrese un mensaje" required></textarea>
-                <fieldset>
-                    <label for="mujer">Mujer</label>
-                    <input type="radio" name="sexo" id="mujer" value="mujer" checked>
-                    <label for="hombre">Hombre</label>
-                    <input type="radio" name="sexo" id="hombre" value="hombre">
-                    <label for="noespecifica">No especifica</label>
-                    <input type="radio" name="sexo" id="noespecifica" value="noespecifica">
-                </fieldset>
-                <div class="botones">
-                    <button type="submit" class="btn btn-outline-light">Enviar</button>
-                    <button type="reset" class="btn btn-outline-light">Borrar</button>
+    <main>  
+        <div class="box_contacto">
+            <div class="contactanos">
+                <h1>Contactanos</h1>
+            </div>
+            <div class="contacto">
+                <div class="form_contacto">
+                    <form class="form">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                        <label for="apellido">Apellido: </label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
+                        <label for="email">Email: </label>
+                        <input type="text" name="email" id="email" placeholder="Ingrese su email" required>
+                        <label for="mensaje">Mensaje: </label>
+                        <textarea name="mensaje" id="mensaje" cols="40" rows="5" placeholder="Ingrese un mensaje" required></textarea>
+                        <fieldset>
+                            <label for="mujer">Mujer</label>
+                            <input type="radio" name="sexo" id="mujer" value="mujer" checked>
+                            <label for="hombre">Hombre</label>
+                            <input type="radio" name="sexo" id="hombre" value="hombre">
+                            <label for="noespecifica">No especifica</label>
+                            <input type="radio" name="sexo" id="noespecifica" value="noespecifica">
+                        </fieldset>
+                        <div class="botones">
+                            <button type="submit" class="btn btn-outline-light">Enviar</button>
+                            <button type="reset" class="btn btn-outline-light">Borrar</button>
+                        </div>
+                    </form>
                 </div>
-            </form>
-        </div>
+                <div class="texto-contacto">
+                    <img class="logocontacto" src="../multimedia/img/sobre.png" alt="contacto">
+                    <div>
+                        <p>Para información sobre reservas, opiniones y/o comentarios completá el formulario</p>
+                        <p>Te responderemos lo más rápido posible!</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </main>
     <footer>
         <div class="logo">

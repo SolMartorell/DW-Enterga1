@@ -35,6 +35,7 @@ footer {
     .texto-footer {
         color: $fontcolor;
         font-size: 16px;
+        padding-top: 10px;
         @include flex-column-basic;
         gap: 5px;
         p {
@@ -44,6 +45,10 @@ footer {
     .mapa {
         text-align: center;
         padding-left: 5px;
+        iframe{
+            width: 90%;
+            height: 100%;
+        }
         @media (max-width: 992px) {
             grid-column: 1/3;
             padding: 40px;
