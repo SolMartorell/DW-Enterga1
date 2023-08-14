@@ -1,111 +1,129 @@
-.texto-nosotros {
-  @include flex-column-basic;
-  color: $fontcolor;
-  background-color: $bgcolor;
+.pagina_nosotros {
+  background-image: url(../multimedia/img/logo.jpg);
+  background-size: 250px;
   padding: 30px;
-  h1 {
-    font-size: 32px;
-  }
-  h2 {
-    font-size: 28px;
-  }
-  p {
-    font-size: 28px;
-    padding-top: 20px;
-  }
-  @media (max-width: 768px) {
+  .texto-nosotros {
+    @include flex-column-basic;
+    background-color: black;
+    box-shadow: 0 0 20px 0 rgba($color: #fcfbfbaf, $alpha: 0.3);
+    border-radius: 15px;
+    color: $fontcolor;
+    width: 60%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     h1 {
-      font-size: 28px;
+      font-size: 30px;
     }
     h2 {
-      font-size: 24px;
+      font-size: 26px;
     }
     p {
-      font-size: 24px;
+      font-size: 26px;
+      padding-top: 20px;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 26px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 22px;
+      }
+    }
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 20px;
+      }
     }
   }
-  @media (max-width: 576px) {
-    h1 {
-      font-size: 24px;
+  .cervezas {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    justify-items: center;
+    row-gap: 25px;
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat (3, 1fr);
     }
-    h2 {
-      font-size: 22px;
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
     }
-    p {
-      font-size: 22px;
-    }
-  }
-}
-.cervezas {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat (2, 1fr);
-  justify-items: center;
-  row-gap: 25px;
-  @media (max-width: 992px) {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat (3, 1fr);
-  }
-  @media (max-width: 576px) {
-      grid-template-columns: 1fr;
-  }
-  .cerveza {
-    position: relative;
-    width: 280px;
-    height: 280px;
-    overflow: hidden;
-    padding: 0;
-    &::before {
-      content: "";
-      width: inherit;
-      height: inherit;
-      background-color: black;
-      position: absolute;
-      transform: scaleZ(0);
-    }
-    &:hover::before {
-      transform: scaleZ(1);
-    }
-    img {
-      width: inherit;
-      height: inherit;
-      object-fit: cover;
-    }
-    .info_cerveza {
+    .cerveza {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      overflow: hidden;
+      padding: 0;
+      &::before {
+        content: "";
         width: inherit;
         height: inherit;
+        background-color: black;
         position: absolute;
-        color: $fontcolor;
-        font-size: 16px;
-        @include flex-column-basic;
-        padding: 10px;
-        gap: 5px;
+        transform: scaleZ(0);
+      }
+      &:hover::before {
+        transform: scaleZ(1.5);
+      }
+      img {
         width: inherit;
         height: inherit;
-        top: -20px;
-        left: 0;
-        opacity: 0;
-        &:hover {
-          top: 0;
-          opacity: 1;  
-        }
-        h3 {
-          font-size: 20px;
-          margin: 0;
-        }
-        h4 {
-          font-size: 18px;
-          margin: 0;
-        }
+        object-fit: cover;
+        border: double 5px white;
+      }
+      .info_cerveza {
+          width: inherit;
+          height: inherit;
+          position: absolute;
+          color: $fontcolor;
+          font-size: 16px;
+          @include flex-column-basic;
+          padding: 10px;
+          gap: 5px;
+          width: inherit;
+          height: inherit;
+          top: -20px;
+          left: 0;
+          opacity: 0;
+          &:hover {
+            top: 0;
+            opacity: 1;  
+          }
+          h3 {
+            font-size: 20px;
+            margin: 0;
+          }
+          h4 {
+            font-size: 18px;
+            margin: 0;
+          }
+      }
     }
   }
-}
-.hh {
-  font-size: 18px;
-  padding: 40px;
-  text-align: center;
-  color: $fontcolor;
-  p {
-    margin: 0;
+  .hh {
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+    color: $fontcolor;
+    background-color: black;
+    box-shadow: 0 0 20px 0 rgba($color: #fcfbfbaf, $alpha: 0.3);
+    border-radius: 15px;
+    width: 30%;
+    margin: auto;
+    p {
+      margin: 0;
+    }
   }
 }

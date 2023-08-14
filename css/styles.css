@@ -17,14 +17,14 @@
   transition: 0.5s;
 }
 
-.box_contacto .contacto .form_contacto .form #email, .box_contacto .contacto .form_contacto .form #apellido, .box_contacto .contacto .form_contacto .form #nombre {
+.pagina_contacto .box_contacto .contacto .form_contacto .form #email, .pagina_contacto .box_contacto .contacto .form_contacto .form #apellido, .pagina_contacto .box_contacto .contacto .form_contacto .form #nombre {
   border-radius: 5px;
   padding-left: 5px;
   height: 40px;
 }
 
 .navegador {
-  background-color: rgb(26, 22, 22);
+  background-color: black;
   padding: 15px 20px;
   height: 100px;
   align-content: center;
@@ -85,7 +85,7 @@
   color: white;
 }
 .navegador ul li a:hover {
-  color: rgba(90, 88, 88, 0.459);
+  color: rgba(90, 88, 88, 0.5);
 }
 @media (max-width: 768px) {
   .navegador ul li a:hover {
@@ -108,15 +108,15 @@
   }
 }
 footer {
-  background-color: rgb(26, 22, 22);
+  background-color: black;
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-columns: 2fr 4fr 3fr;
   align-items: center;
   padding-bottom: 10px;
 }
 @media (max-width: 992px) {
   footer {
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
   }
 }
 @media (max-width: 576px) {
@@ -133,25 +133,16 @@ footer .logo {
   gap: 5px;
   color: white;
   font-size: small;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 footer .logo p {
   margin: 0;
 }
-@media (max-width: 576px) {
-  footer .logo {
-    padding: 20px;
-  }
-}
 footer .logo img {
   object-fit: cover;
-  width: 100px;
-  height: 100px;
-}
-@media (max-width: 576px) {
-  footer .logo img {
-    width: 60px;
-    height: 60px;
-  }
+  width: 200px;
+  height: 75px;
 }
 footer .texto-footer {
   color: white;
@@ -166,9 +157,14 @@ footer .texto-footer {
 footer .texto-footer p {
   margin: 0;
 }
+@media (max-width: 576px) {
+  footer .texto-footer {
+    font-size: 14px;
+  }
+}
 footer .mapa {
   text-align: center;
-  padding-left: 5px;
+  padding: 10px;
 }
 footer .mapa iframe {
   width: 90%;
@@ -191,7 +187,7 @@ footer .mapa iframe {
 }
 
 main {
-  background-color: rgb(26, 22, 22);
+  background-color: black;
   padding-bottom: 40px;
 }
 main .carousel-caption {
@@ -205,7 +201,12 @@ main .carousel-item img {
   opacity: 0.5;
 }
 
-.fotos {
+.pagina_fotos {
+  background-image: url(../multimedia/img/logo.jpg);
+  background-size: 250px;
+  padding: 30px;
+}
+.pagina_fotos .fotos {
   padding: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -213,55 +214,60 @@ main .carousel-item img {
   gap: 20px;
 }
 @media (max-width: 992px) {
-  .fotos {
+  .pagina_fotos .fotos {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 590px) {
-  .fotos {
+  .pagina_fotos .fotos {
     grid-template-columns: 1fr;
   }
 }
-.fotos img {
+.pagina_fotos .fotos img {
   width: 250px;
   height: 250px;
   object-fit: cover;
   margin: 15px;
   transition: 0.3s;
 }
-.fotos img:hover {
-  transform: scale(1.25);
+.pagina_fotos .fotos img:hover {
+  transform: scale(1.5);
   border: solid 5px white;
   border-radius: 10px;
 }
 
-.box_contacto {
+.pagina_contacto {
+  background-image: url(../multimedia/img/logo.jpg);
+  background-size: 250px;
+  padding: 30px;
+}
+.pagina_contacto .box_contacto {
   padding: 40px;
-  background-color: rgba(90, 88, 88, 0.459);
+  background-color: black;
   box-shadow: 0 0 20px 0 rgba(252, 251, 251, 0.3);
   width: 600px;
-  border-radius: 5px;
+  border-radius: 15px;
   margin: auto;
 }
 @media (max-width: 576px) {
-  .box_contacto {
+  .pagina_contacto .box_contacto {
     width: 400px;
   }
 }
-.box_contacto .contactanos h1 {
+.pagina_contacto .box_contacto .contactanos h1 {
   font-size: 32px;
   color: white;
   text-align: center;
   margin: 0;
 }
-.box_contacto .contacto {
+.pagina_contacto .box_contacto .contacto {
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
   gap: 10px;
 }
-.box_contacto .contacto .texto-contacto {
+.pagina_contacto .box_contacto .contacto .texto-contacto {
   font-size: 14px;
   color: white;
   padding: 10px;
@@ -270,31 +276,31 @@ main .carousel-item img {
   justify-content: center;
   text-align: center;
 }
-.box_contacto .contacto .texto-contacto img {
+.pagina_contacto .box_contacto .contacto .texto-contacto img {
   width: 100px;
   height: 100px;
   object-fit: cover;
   margin: 40px auto;
 }
-.box_contacto .contacto .texto-contacto p {
+.pagina_contacto .box_contacto .contacto .texto-contacto p {
   gap: 20px;
 }
 @media (max-width: 576px) {
-  .box_contacto .contacto .texto-contacto {
+  .pagina_contacto .box_contacto .contacto .texto-contacto {
     width: 150px;
     font-size: 12px;
   }
 }
-.box_contacto .contacto .form_contacto {
+.pagina_contacto .box_contacto .contacto .form_contacto {
   padding: 10px;
 }
 @media (max-width: 576px) {
-  .box_contacto .contacto .form_contacto {
+  .pagina_contacto .box_contacto .contacto .form_contacto {
     width: 250px;
     font-size: 14px;
   }
 }
-.box_contacto .contacto .form_contacto .form {
+.pagina_contacto .box_contacto .contacto .form_contacto .form {
   color: white;
   margin: 15px auto;
   margin-bottom: 0%;
@@ -305,14 +311,14 @@ main .carousel-item img {
   text-align: center;
   gap: 10px;
 }
-.box_contacto .contacto .form_contacto .form label {
+.pagina_contacto .box_contacto .contacto .form_contacto .form label {
   text-align: start;
 }
-.box_contacto .contacto .form_contacto .form textarea {
+.pagina_contacto .box_contacto .contacto .form_contacto .form textarea {
   border-radius: 5px;
   padding-left: 5px;
 }
-.box_contacto .contacto .form_contacto .form fieldset {
+.pagina_contacto .box_contacto .contacto .form_contacto .form fieldset {
   font-size: 14px;
   display: flex;
   flex-direction: row;
@@ -323,11 +329,11 @@ main .carousel-item img {
   padding-bottom: 10px;
 }
 @media (max-width: 576px) {
-  .box_contacto .contacto .form_contacto .form fieldset {
+  .pagina_contacto .box_contacto .contacto .form_contacto .form fieldset {
     font-size: 10px;
   }
 }
-.box_contacto .contacto .form_contacto .form .botones {
+.pagina_contacto .box_contacto .contacto .form_contacto .form .botones {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -335,67 +341,82 @@ main .carousel-item img {
   gap: 10px;
 }
 
-.carta {
+.pagina_carta {
+  background-image: url(../multimedia/img/logo.jpg);
+  background-size: 250px;
   padding: 30px;
 }
-.carta .carta-qr {
+.pagina_carta .carta {
+  padding: 30px;
+}
+.pagina_carta .carta .carta-qr {
   display: block;
   margin: auto;
   padding: 30px;
   object-fit: cover;
   width: 600px;
-  border: double 10px white;
-  background-color: rgb(26, 22, 22);
+  background-color: black;
 }
 @media (max-width: 768px) {
-  .carta .carta-qr {
+  .pagina_carta .carta .carta-qr {
     width: 80%;
   }
 }
 
-.texto-nosotros {
+.pagina_nosotros {
+  background-image: url(../multimedia/img/logo.jpg);
+  background-size: 250px;
+  padding: 30px;
+}
+.pagina_nosotros .texto-nosotros {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background-color: black;
+  box-shadow: 0 0 20px 0 rgba(252, 251, 251, 0.3);
+  border-radius: 15px;
   color: white;
-  background-color: rgb(26, 22, 22);
-  padding: 30px;
+  width: 60%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.texto-nosotros h1 {
-  font-size: 32px;
+.pagina_nosotros .texto-nosotros h1 {
+  font-size: 30px;
 }
-.texto-nosotros h2 {
-  font-size: 28px;
+.pagina_nosotros .texto-nosotros h2 {
+  font-size: 26px;
 }
-.texto-nosotros p {
-  font-size: 28px;
+.pagina_nosotros .texto-nosotros p {
+  font-size: 26px;
   padding-top: 20px;
 }
 @media (max-width: 768px) {
-  .texto-nosotros h1 {
-    font-size: 28px;
+  .pagina_nosotros .texto-nosotros h1 {
+    font-size: 26px;
   }
-  .texto-nosotros h2 {
-    font-size: 24px;
+  .pagina_nosotros .texto-nosotros h2 {
+    font-size: 22px;
   }
-  .texto-nosotros p {
-    font-size: 24px;
+  .pagina_nosotros .texto-nosotros p {
+    font-size: 22px;
   }
 }
 @media (max-width: 576px) {
-  .texto-nosotros h1 {
-    font-size: 24px;
-  }
-  .texto-nosotros h2 {
+  .pagina_nosotros .texto-nosotros h1 {
     font-size: 22px;
   }
-  .texto-nosotros p {
-    font-size: 22px;
+  .pagina_nosotros .texto-nosotros h2 {
+    font-size: 20px;
+  }
+  .pagina_nosotros .texto-nosotros p {
+    font-size: 20px;
   }
 }
-
-.cervezas {
+.pagina_nosotros .cervezas {
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat 2, 1fr;
@@ -403,24 +424,24 @@ main .carousel-item img {
   row-gap: 25px;
 }
 @media (max-width: 992px) {
-  .cervezas {
+  .pagina_nosotros .cervezas {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat 3, 1fr;
   }
 }
 @media (max-width: 576px) {
-  .cervezas {
+  .pagina_nosotros .cervezas {
     grid-template-columns: 1fr;
   }
 }
-.cervezas .cerveza {
+.pagina_nosotros .cervezas .cerveza {
   position: relative;
   width: 280px;
   height: 280px;
   overflow: hidden;
   padding: 0;
 }
-.cervezas .cerveza::before {
+.pagina_nosotros .cervezas .cerveza::before {
   content: "";
   width: inherit;
   height: inherit;
@@ -428,15 +449,16 @@ main .carousel-item img {
   position: absolute;
   transform: scaleZ(0);
 }
-.cervezas .cerveza:hover::before {
-  transform: scaleZ(1);
+.pagina_nosotros .cervezas .cerveza:hover::before {
+  transform: scaleZ(1.5);
 }
-.cervezas .cerveza img {
+.pagina_nosotros .cervezas .cerveza img {
   width: inherit;
   height: inherit;
   object-fit: cover;
+  border: double 5px white;
 }
-.cervezas .cerveza .info_cerveza {
+.pagina_nosotros .cervezas .cerveza .info_cerveza {
   width: inherit;
   height: inherit;
   position: absolute;
@@ -454,26 +476,30 @@ main .carousel-item img {
   left: 0;
   opacity: 0;
 }
-.cervezas .cerveza .info_cerveza:hover {
+.pagina_nosotros .cervezas .cerveza .info_cerveza:hover {
   top: 0;
   opacity: 1;
 }
-.cervezas .cerveza .info_cerveza h3 {
+.pagina_nosotros .cervezas .cerveza .info_cerveza h3 {
   font-size: 20px;
   margin: 0;
 }
-.cervezas .cerveza .info_cerveza h4 {
+.pagina_nosotros .cervezas .cerveza .info_cerveza h4 {
   font-size: 18px;
   margin: 0;
 }
-
-.hh {
-  font-size: 18px;
-  padding: 40px;
+.pagina_nosotros .hh {
+  font-size: 16px;
+  padding: 20px;
   text-align: center;
   color: white;
+  background-color: black;
+  box-shadow: 0 0 20px 0 rgba(252, 251, 251, 0.3);
+  border-radius: 15px;
+  width: 30%;
+  margin: auto;
 }
-.hh p {
+.pagina_nosotros .hh p {
   margin: 0;
 }
 

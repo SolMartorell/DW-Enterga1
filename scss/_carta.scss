@@ -1,15 +1,19 @@
-.carta {
+.pagina_carta {
+    background-image: url(../multimedia/img/logo.jpg);
+    background-size: 250px;
     padding: 30px;
-    .carta-qr {
-        display: block;
-        margin: auto;
+    .carta {
         padding: 30px;
-        object-fit: cover;
-        width: 600px;
-        border: double 10px white;
-        background-color: $bgcolor;
-    @media (max-width: 768px) {
-        width: 80%;
-    }
+        .carta-qr {
+            display: block;
+            margin: auto;
+            padding: 30px;
+            object-fit: cover;
+            width: 600px;
+            background-color: $bgcolor;
+        @media (max-width: 768px) {
+            width: 80%;
+        }
+        }
     }
 }
