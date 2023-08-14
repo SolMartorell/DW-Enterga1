@@ -22,7 +22,7 @@
       font-size: 26px;
       padding-top: 20px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       h1 {
         font-size: 26px;
       }
@@ -33,7 +33,8 @@
         font-size: 22px;
       }
     }
-    @media (max-width: 576px) {
+    @media (max-width: 650px) {
+      width: 80%;
       h1 {
         font-size: 22px;
       }
@@ -57,7 +58,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat (3, 1fr);
     }
-    @media (max-width: 576px) {
+    @media (max-width: 650px) {
         grid-template-columns: 1fr;
     }
     .cerveza {

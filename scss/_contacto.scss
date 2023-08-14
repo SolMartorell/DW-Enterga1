@@ -9,7 +9,7 @@
     width: 600px;
     border-radius: 15px;
     margin: auto;
-    @media (max-width: 576px) {
+    @media (max-width: 650px) {
       width: 400px;
     }
     .contactanos {
@@ -37,14 +37,14 @@
         p {
           gap: 20px;
         }
-        @media (max-width: 576px) {
+        @media (max-width: 650px) {
           width: 150px;
           font-size: 12px;
         }
       }
       .form_contacto {
         padding: 10px;
-        @media (max-width: 576px) {
+        @media (max-width: 650px) {
           width: 250px;
           font-size: 14px;
         }

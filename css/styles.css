@@ -218,7 +218,7 @@ main .carousel-item img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 590px) {
+@media (max-width: 650px) {
   .pagina_fotos .fotos {
     grid-template-columns: 1fr;
   }
@@ -249,7 +249,7 @@ main .carousel-item img {
   border-radius: 15px;
   margin: auto;
 }
-@media (max-width: 576px) {
+@media (max-width: 650px) {
   .pagina_contacto .box_contacto {
     width: 400px;
   }
@@ -285,7 +285,7 @@ main .carousel-item img {
 .pagina_contacto .box_contacto .contacto .texto-contacto p {
   gap: 20px;
 }
-@media (max-width: 576px) {
+@media (max-width: 650px) {
   .pagina_contacto .box_contacto .contacto .texto-contacto {
     width: 150px;
     font-size: 12px;
@@ -294,7 +294,7 @@ main .carousel-item img {
 .pagina_contacto .box_contacto .contacto .form_contacto {
   padding: 10px;
 }
-@media (max-width: 576px) {
+@media (max-width: 650px) {
   .pagina_contacto .box_contacto .contacto .form_contacto {
     width: 250px;
     font-size: 14px;
@@ -392,7 +392,7 @@ main .carousel-item img {
   font-size: 26px;
   padding-top: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .pagina_nosotros .texto-nosotros h1 {
     font-size: 26px;
   }
@@ -403,7 +403,10 @@ main .carousel-item img {
     font-size: 22px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 650px) {
+  .pagina_nosotros .texto-nosotros {
+    width: 80%;
+  }
   .pagina_nosotros .texto-nosotros h1 {
     font-size: 22px;
   }
@@ -429,7 +432,7 @@ main .carousel-item img {
     grid-template-rows: repeat 3, 1fr;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 650px) {
   .pagina_nosotros .cervezas {
     grid-template-columns: 1fr;
   }
