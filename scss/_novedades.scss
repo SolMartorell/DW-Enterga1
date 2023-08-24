@@ -35,6 +35,9 @@
             height: 30px;
             object-fit: cover;
         }
+        h1 {
+            font-size: 18px;
+        }
     }
     @media (max-width: 992px) {
         @include flex-column-basic;

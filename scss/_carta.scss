@@ -6,23 +6,17 @@
         padding: 20px 10px;
     }
     .carta {
+        width: 50%;
+        margin: auto;
         padding: 30px;
-        .carta-qr {
-            display: block;
-            margin: auto;
-            padding: 30px;
+        @include flex-column-basic;
+        align-items: center;
+        padding: 30px;
+        gap: 15px;
+        background-color: $bgcolor;
+        img {
             object-fit: cover;
-            width: 40%;
-            background-color: $bgcolor;
-        @media (max-width: 992px) {
-            width: 70%;
-        }
-        @media (max-width: 768px) {
-            width: 80%;
-        }
-        @media (max-width: 576px) {
-            width: 90%;
-        }
+            width: 100%;
         }
     }
 }
