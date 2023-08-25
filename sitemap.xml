@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://solmartorell.github.io/PreEntrega-Martorell/</loc>
+  <lastmod>2023-08-25T18:12:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://solmartorell.github.io/PreEntrega-Martorell/index.html</loc>
+  <lastmod>2023-08-25T18:12:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://solmartorell.github.io/PreEntrega-Martorell/pages/novedades.html</loc>
+  <lastmod>2023-08-25T18:12:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://solmartorell.github.io/PreEntrega-Martorell/pages/carta.html</loc>
+  <lastmod>2023-08-25T18:12:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://solmartorell.github.io/PreEntrega-Martorell/pages/fotos.html</loc>
+  <lastmod>2023-08-25T18:12:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://solmartorell.github.io/PreEntrega-Martorell/pages/contacto.html</loc>
+  <lastmod>2023-08-25T18:12:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
